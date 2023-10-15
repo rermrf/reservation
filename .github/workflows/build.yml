@@ -1,3 +1,5 @@
+# 我正在学习github action，这是我的第一个action
+
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
@@ -16,3 +18,17 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+# name: build
+
+# on: 
+#   push: 
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs:
+#   build-rust:
+    
